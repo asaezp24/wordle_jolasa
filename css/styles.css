@@ -1,0 +1,44 @@
+body{
+    display: grid;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Izenburua */
+.izenburua{
+    color: rgb(120, 0, 0);
+}
+
+/* Select */
+.select{
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: black;
+    background-color: white;
+    border-color: rgb(120, 0, 0);
+    border-radius: 8px;
+}
+
+/* Jolastu Botoia */
+.botoia{
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgb(120, 0, 0);
+    border-style: none;
+    border-radius: 8px;
+}
+
+.botoia:hover{
+    background-color: rgb(180, 0, 0);
+}
+
+/*  */

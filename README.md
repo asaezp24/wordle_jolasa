@@ -1,1 +1,3 @@
-# wordle_jolasa
+# WORDLE JOLASA
+
+Wordle jolasaren kodea
