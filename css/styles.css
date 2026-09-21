@@ -1,16 +1,26 @@
-body{
+body {
     display: grid;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Izenburua */
-.izenburua{
+.izenburua {
     color: rgb(120, 0, 0);
 }
 
+/* Formularioa */
+.form {
+    width: fit-content;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 2px solid #c2c2c2;
+    border-radius: 10px;
+}
+
 /* Select */
-.select{
+.select {
     margin: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -18,13 +28,13 @@ body{
     padding-right: 25px;
     color: black;
     background-color: white;
-    border-color: rgb(120, 0, 0);
+    border: 2px solid rgb(120, 0, 0);
     border-radius: 8px;
 }
 
 /* Jolastu Botoia */
-.botoia{
-    margin: 10px;
+.botoia {
+    margin: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 50px;
@@ -37,8 +47,57 @@ body{
     border-radius: 8px;
 }
 
-.botoia:hover{
+.botoia:hover {
     background-color: rgb(180, 0, 0);
 }
 
-/*  */
+/* Teklatua */
+.tek {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 6px;
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.tek2 {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 6px;
+    margin: 6px auto;
+}
+
+.letrak {
+    background-color: rgb(192, 192, 192);
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tildeak {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+/* Saiakera blokeak */
+
+.divBlokeak {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.blokeak {
+    border: 2px solid rgb(192, 192, 192);
+    border-radius: 4px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
