@@ -87,17 +87,26 @@ body {
 
 /* Saiakera blokeak */
 
+.blokeakContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
 .divBlokeak {
-    margin-top: 10px;
-    padding: 20px;
+    display: flex;
+    gap: 5px;
 }
 
 .blokeak {
-    border: 2px solid rgb(192, 192, 192);
+    width: 60px;
+    aspect-ratio: 1;
+    border: 2px solid #c0c0c0;
     border-radius: 4px;
-    padding: 20px;
+    display: grid;
+    place-items: center;
+    font-size: 24px;
     font-weight: bold;
-    font-size: 20px;
-    margin-left: 2px;
-    margin-right: 2px;
 }
