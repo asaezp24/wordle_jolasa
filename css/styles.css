@@ -110,3 +110,16 @@ body {
     font-size: 24px;
     font-weight: bold;
 }
+
+/* Erantzunak */
+.berdea{
+    background-color: rgb(38, 144, 38);
+}
+
+.horia{
+    background-color: rgb(220, 178, 29);
+}
+
+.grisa{
+    background-color: gray;
+}
