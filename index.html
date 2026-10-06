@@ -24,6 +24,7 @@
                 <option value="6">6</option>
             </select>
         </div>
+
         <p>Letra kopurua</p>
         <div>
             <select id="letra" name="letra" class="select">
@@ -32,8 +33,9 @@
                 <option value="7">7</option>
             </select>
         </div>
+
         <div>
-            <button type="button" class="botoia" onclick="jokoaHasi()">
+            <button type="button" class="botoia" id="jolastuBotoia">
                 Jolastu
             </button>
         </div>
@@ -43,49 +45,53 @@
 
     <div class="tek" id="jolasa">
         <div class="tek2">
-            <span class="letrak tildeak" onclick="letraHartu(this)">Á</span>
-            <span class="letrak tildeak" onclick="letraHartu(this)">É</span>
-            <span class="letrak tildeak" onclick="letraHartu(this)">Í</span>
-            <span class="letrak tildeak" onclick="letraHartu(this)">Ó</span>
-            <span class="letrak tildeak" onclick="letraHartu(this)">Ú</span>
+            <button class="letrak tildeak">Á</button>
+            <button class="letrak tildeak">É</button>
+            <button class="letrak tildeak">Í</button>
+            <button class="letrak tildeak">Ó</button>
+            <button class="letrak tildeak">Ú</button>
         </div>
+
         <div class="tek2">
-            <span class="letrak" onclick="letraHartu(this)">Q</span>
-            <span class="letrak" onclick="letraHartu(this)">W</span>
-            <span class="letrak" onclick="letraHartu(this)">E</span>
-            <span class="letrak" onclick="letraHartu(this)">R</span>
-            <span class="letrak" onclick="letraHartu(this)">T</span>
-            <span class="letrak" onclick="letraHartu(this)">Y</span>
-            <span class="letrak" onclick="letraHartu(this)">U</span>
-            <span class="letrak" onclick="letraHartu(this)">I</span>
-            <span class="letrak" onclick="letraHartu(this)">O</span>
-            <span class="letrak" onclick="letraHartu(this)">P</span>
+            <button class="letrak">Q</button>
+            <button class="letrak">W</button>
+            <button class="letrak">E</button>
+            <button class="letrak">R</button>
+            <button class="letrak">T</button>
+            <button class="letrak">Y</button>
+            <button class="letrak">U</button>
+            <button class="letrak">I</button>
+            <button class="letrak">O</button>
+            <button class="letrak">P</button>
         </div>
+
         <div class="tek2">
-            <span class="letrak" onclick="letraHartu(this)">A</span>
-            <span class="letrak" onclick="letraHartu(this)">S</span>
-            <span class="letrak" onclick="letraHartu(this)">D</span>
-            <span class="letrak" onclick="letraHartu(this)">F</span>
-            <span class="letrak" onclick="letraHartu(this)">G</span>
-            <span class="letrak" onclick="letraHartu(this)">H</span>
-            <span class="letrak" onclick="letraHartu(this)">J</span>
-            <span class="letrak" onclick="letraHartu(this)">K</span>
-            <span class="letrak" onclick="letraHartu(this)">L</span>
-            <span class="letrak" onclick="letraHartu(this)">Ñ</span>
+            <button class="letrak">A</button>
+            <button class="letrak">S</button>
+            <button class="letrak">D</button>
+            <button class="letrak">F</button>
+            <button class="letrak">G</button>
+            <button class="letrak">H</button>
+            <button class="letrak">J</button>
+            <button class="letrak">K</button>
+            <button class="letrak">L</button>
+            <button class="letrak">Ñ</button>
         </div>
+
         <div class="tek2">
-            <span class="letrak" onclick="enter()">ENTER</span>
-            <span class="letrak" onclick="letraHartu(this)">Z</span>
-            <span class="letrak" onclick="letraHartu(this)">X</span>
-            <span class="letrak" onclick="letraHartu(this)">C</span>
-            <span class="letrak" onclick="letraHartu(this)">V</span>
-            <span class="letrak" onclick="letraHartu(this)">B</span>
-            <span class="letrak" onclick="letraHartu(this)">N</span>
-            <span class="letrak" onclick="letraHartu(this)">M</span>
-            <span class="letrak" onclick="ezabatu()">DEL</span>
+            <button class="letrak" id="enterBotoia">ENTER</button>
+            <button class="letrak">Z</button>
+            <button class="letrak">X</button>
+            <button class="letrak">C</button>
+            <button class="letrak">V</button>
+            <button class="letrak">B</button>
+            <button class="letrak">N</button>
+            <button class="letrak">M</button>
+            <button class="letrak" id="ezabatuBotoia">DEL</button>
         </div>
     </div>
 
+    <div id="historiala" class="historiala"></div>
 </body>
 
 </html>

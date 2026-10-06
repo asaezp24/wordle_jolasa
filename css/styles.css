@@ -1,25 +1,36 @@
+:root {
+    --gorria: rgb(120, 0, 0);
+    --gorria-hover: rgb(180, 0, 0);
+    --teklatua: rgb(192, 192, 192);
+    --berdea: rgb(38, 144, 38);
+    --horia: rgb(220, 178, 29);
+    --grisa: gray;
+    --zuria: white;
+    --formularioa: #f2f2f2;
+    --bordea: #c2c2c2;
+    --testu-grisa: #555555;
+}
+
 body {
     display: grid;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Izenburua */
+/* Hasiera pantaila */
 .izenburua {
-    color: rgb(120, 0, 0);
+    color: var(--gorria);
 }
 
-/* Formularioa */
 .form {
     width: fit-content;
     margin: 30px auto;
     padding: 20px;
-    background-color: #f2f2f2;
-    border: 2px solid #c2c2c2;
+    background-color: var(--formularioa);
+    border: 2px solid var(--bordea);
     border-radius: 10px;
 }
 
-/* Select */
 .select {
     margin: 10px;
     padding-top: 5px;
@@ -27,34 +38,33 @@ body {
     padding-left: 25px;
     padding-right: 25px;
     color: black;
-    background-color: white;
-    border: 2px solid rgb(120, 0, 0);
+    background-color: var(--zuria);
+    border: 2px solid var(--gorria);
     border-radius: 8px;
 }
 
-/* Jolastu Botoia */
 .botoia {
     margin: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 50px;
     padding-right: 50px;
-    color: white;
+    color: var(--zuria);
     font-weight: bold;
     font-size: 15px;
-    background-color: rgb(120, 0, 0);
+    background-color: var(--gorria);
     border-style: none;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .botoia:hover {
-    background-color: rgb(180, 0, 0);
+    background-color: var(--gorria-hover);
 }
 
 /* Teklatua */
 .tek {
     display: grid;
-    grid-auto-flow: column;
     gap: 6px;
     width: fit-content;
     margin: 30px auto;
@@ -68,7 +78,8 @@ body {
 }
 
 .letrak {
-    background-color: rgb(192, 192, 192);
+    background-color: var(--teklatua);
+    border: none;
     border-radius: 4px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -76,6 +87,7 @@ body {
     padding-right: 15px;
     font-weight: bold;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .tildeak {
@@ -85,8 +97,7 @@ body {
     padding-right: 35px;
 }
 
-/* Saiakera blokeak */
-
+/* Blokeak */
 .blokeakContainer {
     display: flex;
     flex-direction: column;
@@ -103,7 +114,7 @@ body {
 .blokeak {
     width: 60px;
     aspect-ratio: 1;
-    border: 2px solid #c0c0c0;
+    border: 2px solid var(--bordea);
     border-radius: 4px;
     display: grid;
     place-items: center;
@@ -112,14 +123,53 @@ body {
 }
 
 /* Erantzunak */
-.berdea{
-    background-color: rgb(38, 144, 38);
+.berdea {
+    background-color: var(--berdea);
 }
 
-.horia{
-    background-color: rgb(220, 178, 29);
+.horia {
+    background-color: var(--horia);
 }
 
-.grisa{
-    background-color: gray;
+.grisa {
+    background-color: var(--grisa);
+}
+
+/* Historiala */
+.historiala {
+    width: fit-content;
+    margin: 40px auto;
+}
+
+.historiala h2 {
+    color: var(--gorria);
+}
+
+.partida {
+    display: grid;
+    gap: 8px;
+    margin: 12px 0;
+    padding: 15px;
+    text-align: left;
+    border: 2px solid var(--bordea);
+    border-radius: 8px;
+    background-color: var(--formularioa);
+}
+
+.partida p {
+    margin: 0;
+}
+
+.irabazi {
+    color: var(--berdea);
+    font-weight: bold;
+}
+
+.galdu {
+    color: var(--gorria);
+    font-weight: bold;
+}
+
+#historiala .botoia {
+    margin-top: 20px;
 }
