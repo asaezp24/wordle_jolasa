@@ -163,7 +163,7 @@ function partidaGorde(irabazi) {
     let partida = {
         hitza: hitza,
         saiakerak: saiakerak,
-        data: new Date().toLocaleString("es-ES"),
+        data: new Date().toISOString().split("T")[0],
         irabazi: irabazi
     };
 
@@ -183,17 +183,20 @@ function jokoaAmaitu(irabazi) {
 
     partidaGorde(irabazi);
 
-    document.getElementById("jolasa").style.display = "none";
-    document.getElementById("blokeak").style.display = "none";
-
-    ikusiHistoriala();
+    ikusiHistoriala(true);
 
     /* Alerta ikusi */
-    if (irabazi) {
-        alert("Irabazi duzu! Hitza: " + hitza);
-    } else {
-        alert("Galdu duzu. Hitza: " + hitza);
-    }
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            if (irabazi) {
+                alert("Irabazi duzu! Hitza: " + hitza);
+            } else {
+                alert("Galdu duzu. Hitza: " + hitza);
+            }
+            document.getElementById("jolasa").style.display = "none";
+            document.getElementById("blokeak").style.display = "none";
+        });
+    });
 }
 
 /* Konprobatu saiakera eta irabazi duen ala ez */
@@ -288,7 +291,7 @@ function jokoaHasi() {
 }
 
 /* Ikusi historiala */
-function ikusiHistoriala() {
+function ikusiHistoriala(mostrarBoton = false) {
     let historiala = document.getElementById("historiala");
     let partidak = JSON.parse(localStorage.getItem("partidak")) || [];
 
@@ -334,18 +337,19 @@ function ikusiHistoriala() {
         historiala.appendChild(partidaDiv);
     });
 
+    if (mostrarBoton) {
+        /* Botoia berriro jolastu sortu */
+        let berriroBotoia = document.createElement("button");
+        berriroBotoia.textContent = "Berriro jolastu";
+        berriroBotoia.className = "botoia";
 
-    /* Botoia berriro jolastu sortu */
-    let berriroBotoia = document.createElement("button");
-    berriroBotoia.textContent = "Berriro jolastu";
-    berriroBotoia.className = "botoia";
+        berriroBotoia.addEventListener("click", () => {
+            document.getElementById("sarrera").style.display = "block";
+            document.getElementById("historiala").innerHTML = "";
+        });
 
-    berriroBotoia.addEventListener("click", () => {
-        document.getElementById("sarrera").style.display = "block";
-        document.getElementById("historiala").innerHTML = "";
-    });
-
-    historiala.appendChild(berriroBotoia);
+        historiala.appendChild(berriroBotoia);
+    }
 }
 
 /* Hasi partida berria */
